@@ -25,7 +25,7 @@
                 <h4>a. Xác thực biểu mẫu</h4>
                 <p class="text-muted">Ví dụ bạn gửi biểu mẫu nhưng chưa điền hết thông tin thì sẽ nhận được thông báo như bên dưới.</p>
  
-                <form class="was-validated" style="max-width: 500px;" novalidate>
+                <form class="was-validated" style="max-width: 500px;">
                     <div class="mb-3">
                         <label for="username" class="form-label">Tên người dùng:</label>
                         <input type="text" class="form-control" id="username" placeholder="Nhập tên người dùng" required>
@@ -33,7 +33,7 @@
                     </div>
                     <div class="mb-3">
                         <label for="pwd" class="form-label">Mật khẩu:</label>
-                        <input type="password" class="form-control" id="pwd" placeholder="Enter password" required>
+                        <input type="password" class="form-control" id="pwd" placeholder="Nhập mật khẩu" required>
                         <div class="invalid-feedback">Điền đầy đủ thông tin.</div>
                     </div>
                     <div class="mb-3 form-check">
@@ -47,39 +47,40 @@
 
             <section class="mb-5">
                 <h4>b. Registration Form</h4>
-                <h3>Registration Form</h3>
+                <h3>Form đăng ký:</h3>
                 <form style="max-width: 600px;">
                     <div class="row mb-3">
-                        <label for="firstName" class="col-sm-4 col-form-label">First Name:</label>
+                        <label for="firstName" class="col-sm-4 col-form-label">Họ:</label>
                         <div class="col-sm-8">
-                            <input type="text" class="form-control" id="firstName" placeholder="First Name">
+                            <input type="text" class="form-control" id="ho" placeholder="Ex: Nguyễn Văn...">
                         </div>
                     </div>
                     <div class="row mb-3">
-                        <label for="lastName" class="col-sm-4 col-form-label">Last Name:</label>
+                        <label for="lastName" class="col-sm-4 col-form-label">Tên:</label>
                         <div class="col-sm-8">
-                            <input type="text" class="form-control" id="lastName" placeholder="Last Name">
+                            <input type="text" class="form-control" id="Tên" placeholder="Ex: Nam">
                         </div>
                     </div>
                     <div class="row mb-3">
-                        <label for="regEmail" class="col-sm-4 col-form-label">Email Address:</label>
+                        <label for="regEmail" class="col-sm-4 col-form-label">Email:</label>
                         <div class="col-sm-8">
-                            <input type="email" class="form-control" id="regEmail" placeholder="Email Address">
+                            <input type="email" class="form-control" id="Email" placeholder="Ex:email@gmail.com">
                         </div>
                     </div>
                     <div class="row mb-3">
-                        <label for="mobile" class="col-sm-4 col-form-label">Mobile Number:</label>
+                        <label for="mobile" class="col-sm-4 col-form-label">SĐT:</label>
                         <div class="col-sm-8">
-                            <input type="tel" class="form-control" id="mobile" placeholder="Phone Number">
+                            <input type="tel" class="form-control" id="mobile" placeholder="0987654321">
                         </div>
                     </div>
+                    
                     <div class="row mb-3">
-                        <label class="col-sm-4 col-form-label">Date of Birth:</label>
+                        <label class="col-sm-4 col-form-label">Ngày/Tháng/Năm:</label>
                         <div class="col-sm-8">
                             <div class="row g-2">
                                 <div class="col">
                                     <select class="form-select" aria-label="Date">
-                                        <option selected>Date</option>
+                                        <option selected>Ngày</option>
                                         <option value="1">1</option>
                                         <option value="2">2</option>
                                         <option value="3">3</option>
@@ -87,27 +88,27 @@
                                 </div>
                                 <div class="col">
                                     <select class="form-select" aria-label="Month">
-                                        <option selected>Month</option>
-                                        <option value="1">January</option>
-                                        <option value="2">February</option>
-                                        <option value="3">March</option>
+                                        <option selected>Tháng</option>
+                                        <option value="1">Tháng 1</option>
+                                        <option value="2">Tháng 2</option>
+                                        <option value="3">Tháng 3</option>
                                     </select>
                                 </div>
                                 <div class="col">
                                     <select class="form-select" aria-label="Year">
-                                        <option selected>Year</option>
-                                        <option value="2024">2024</option>
-                                        <option value="2023">2023</option>
-                                        <option value="2022">2022</option>
+                                        <option selected>Năm</option>
+                                        <option value="2024">2004</option>
+                                        <option value="2023">2003</option>
+                                        <option value="2022">2002</option>
                                     </select>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div class="row mb-3">
-                        <label for="postalAddress" class="col-sm-4 col-form-label">Postal Address:</label>
+                        <label for="postalAddress" class="col-sm-4 col-form-label">Địa chỉ(hiện tại):</label>
                         <div class="col-sm-8">
-                            <textarea class="form-control" id="postalAddress" rows="3" placeholder="Postal Address"></textarea>
+                            <textarea class="form-control" id="postalAddress" rows="3" placeholder="số nhà, tên đường,..."></textarea>
                         </div>
                     </div>
                     <div class="row mb-3">
@@ -117,30 +118,30 @@
                         </div>
                     </div>
                     <div class="row mb-3">
-                        <label for="uploadImage" class="col-sm-4 col-form-label">Upload Image:</label>
+                        <label for="uploadImage" class="col-sm-4 col-form-label">Tải ảnh lên:</label>
                         <div class="col-sm-8">
-                            <input class="form-control" type="file" id="uploadImage">
+                            <input class="form-control" type="file" id="image">
                         </div>
                     </div>
                     <div class="row mb-3">
-                        <label class="col-sm-4 col-form-label">Gender:</label>
+                        <label class="col-sm-4 col-form-label">Giới tính:</label>
                         <div class="col-sm-8">
                             <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="radio" name="gender" id="genderMale">
-                                <label class="form-check-label" for="genderMale">Male</label>
+                                <input class="form-check-input" type="radio" name="gioitinh" id="Male">
+                                <label class="form-check-label" for="Male">Nam</label>
                             </div>
                             <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="radio" name="gender" id="genderFemale">
-                                <label class="form-check-label" for="genderFemale">Female</label>
+                                <input class="form-check-input" type="radio" name="gioitinh" id="Female">
+                                <label class="form-check-label" for="Female">Nữ</label>
                             </div>
                         </div>
                     </div>
                     <div class="mb-3 form-check">
                         <input type="checkbox" class="form-check-input" id="terms">
-                        <label class="form-check-label" for="terms">I agree to the <a href="#">Terms and Conditions</a></label>
+                        <label class="form-check-label" for="terms">Tôi đồng ý với <a href="#">Điều khoảng&dịch vụ</a></label>
                     </div>
-                    <button type="submit" class="btn btn-dark me-2">Submit</button>
-                    <button type="reset" class="btn btn-secondary">Reset</button>
+                    <button type="submit" class="btn btn-outline-info me-2">Đăng ký</button>
+                    <button type="reset" class="btn btn-outline-danger">Huỷ</button>
                 </form>
             </section>
  
