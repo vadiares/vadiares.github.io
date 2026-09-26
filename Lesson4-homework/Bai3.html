@@ -5,6 +5,7 @@
         <!-- Required meta tags -->
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
+
         <!-- Bootstrap CSS v5.3.8 -->
         <link
             href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
@@ -12,20 +13,32 @@
             integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
             crossorigin="anonymous"
         />
-        <!-- Bootstrap Icons (dùng cho phần b) -->
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+        <!-- Bootstrap Icons (dùng cho mục b) -->
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+        />
     </head>
+
     <body>
         <header>
-            <h2 class="text-center my-4">a, Thiết kế thanh điều hướng 1</h2>
-            <nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom">
+            <!-- place navbar here -->
+        </header>
+        <main>
+            <h2 class="text-center">thanh điều hướng mẫu 1</h2>
+            <nav class="navbar navbar-expand-lg bg-light mb-2">
                 <div class="container-fluid">
                     <a class="navbar-brand" href="#">Logo</a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarA">
+                    <button
+                        class="navbar-toggler"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#navbarA"
+                    >
                         <span class="navbar-toggler-icon"></span>
                     </button>
                     <div class="collapse navbar-collapse" id="navbarA">
-                        <ul class="navbar-nav me-auto">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                             <li class="nav-item">
                                 <a class="nav-link active" href="#">Trang chủ</a>
                             </li>
@@ -37,9 +50,8 @@
                                     Sản phẩm
                                 </a>
                                 <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="#">Điện thoại</a></li>
-                                    <li><a class="dropdown-item" href="#">Laptop</a></li>
-                                    <li><a class="dropdown-item" href="#">Phụ kiện</a></li>
+                                    <li><a class="dropdown-item" href="#">Sản phẩm 1</a></li>
+                                    <li><a class="dropdown-item" href="#">Sản phẩm 2</a></li>
                                 </ul>
                             </li>
                             <li class="nav-item">
@@ -47,34 +59,39 @@
                             </li>
                         </ul>
                         <form class="d-flex">
-                            <input class="form-control me-2" type="search" placeholder="Tìm kiếm...">
-                            <button class="btn btn-dark" type="submit">Tìm</button>
+                            <input class="form-control me-2" type="search" placeholder="Tìm kiếm..." />
+                            <button class="btn btn-outline-dark" type="submit">Tìm</button>
                         </form>
                     </div>
                 </div>
             </nav>
 
-            <h2 class="text-center my-4">b, Thiết kế thanh điều hướng 2</h2>
-            <nav class="navbar navbar-expand-lg navbar-dark bg-dark mt-3">
+            <h2 class="text-center">thanh điều hướng mẫu 2</h2>
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
                 <div class="container-fluid">
-                    <a class="navbar-brand" href="#">S</a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarB">
+                    <a class="navbar-brand fw-bold" href="#">S</a>
+                    <button
+                        class="navbar-toggler"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#navbarB"
+                    >
                         <span class="navbar-toggler-icon"></span>
                     </button>
                     <div class="collapse navbar-collapse" id="navbarB">
-                        <ul class="navbar-nav me-auto">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                             <li class="nav-item dropdown">
                                 <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">
-                                    <i class="bi bi-phone me-1"></i>Điện thoại
+                                    <i class="bi bi-phone"></i> Điện thoại
                                 </a>
                                 <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="#">Samsung</a></li>
                                     <li><a class="dropdown-item" href="#">iPhone</a></li>
+                                    <li><a class="dropdown-item" href="#">Samsung</a></li>
                                 </ul>
                             </li>
                             <li class="nav-item dropdown">
                                 <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">
-                                    <i class="bi bi-laptop me-1"></i>Laptop
+                                    <i class="bi bi-laptop"></i> Laptop
                                 </a>
                                 <ul class="dropdown-menu">
                                     <li><a class="dropdown-item" href="#">Dell</a></li>
@@ -83,32 +100,39 @@
                             </li>
                             <li class="nav-item dropdown">
                                 <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">
-                                    <i class="bi bi-pc-display me-1"></i>PC, Màn hình
+                                    <i class="bi bi-display"></i> PC, Màn hình
                                 </a>
                                 <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="#">Máy bộ</a></li>
+                                    <li><a class="dropdown-item" href="#">PC</a></li>
                                     <li><a class="dropdown-item" href="#">Màn hình</a></li>
                                 </ul>
                             </li>
                             <li class="nav-item dropdown">
                                 <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">
-                                    <i class="bi bi-newspaper me-1"></i>Tin tức công nghệ
+                                    <i class="bi bi-newspaper"></i> Tin tức công nghệ
                                 </a>
                                 <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="#">Bài viết mới</a></li>
+                                    <li><a class="dropdown-item" href="#">Tin mới</a></li>
+                                    <li><a class="dropdown-item" href="#">Đánh giá</a></li>
                                 </ul>
                             </li>
                         </ul>
                         <form class="d-flex me-3">
-                            <input class="form-control" type="search" placeholder="Bạn cần tìm gì?">
+                            <input
+                                class="form-control me-2"
+                                type="search"
+                                placeholder="Bạn cần tìm gì?"
+                            />
+                            <button class="btn btn-outline-light" type="submit">
+                                <i class="bi bi-search"></i>
+                            </button>
                         </form>
-                        <a class="text-white me-3 fs-5" href="#"><i class="bi bi-person"></i></a>
-                        <a class="text-white fs-5" href="#"><i class="bi bi-cart"></i></a>
+                        <a class="nav-link text-white me-3" href="#"><i class="bi bi-person fs-5"></i></a>
+                        <a class="nav-link text-white" href="#"><i class="bi bi-cart fs-5"></i></a>
                     </div>
                 </div>
             </nav>
-        </header>
-        <main></main>
+        </main>
         <footer>
             <!-- place footer here -->
         </footer>
